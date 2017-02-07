@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Product Search</string>
+    <string name="search_title">Which product do you fancy today?</string>
+    <string name="search_hint">Enter a product name (e.g: gloves)</string>
+    <string name="PercentOff">Percent off: %s </string>
+</resources>

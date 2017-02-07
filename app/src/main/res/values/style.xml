@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="MySearchViewStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="queryBackground">@color/white</item>
+        <item name="submitBackground">@color/colorPrimary</item>
+        <item name="closeIcon">@drawable/ic_close</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <!--<item name="goIcon"></item>-->
+        <!--<item name="voiceIcon"></item>-->
+        <!--<item name="commitIcon"></item>-->
+        <!--<item name="suggestionRowLayout"></item>-->
+    </style>
+
+</resources>
