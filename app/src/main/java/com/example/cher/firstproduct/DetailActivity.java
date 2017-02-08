@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
@@ -45,19 +46,32 @@ public class DetailActivity extends AppCompatActivity{
         FabClick.setInterpolator(interpolator);
         myFab.setOnClickListener(new OnClickListener() {
             boolean buttonClicked = false;
+
+            private void timer() {
+                final Handler handler = new Handler();
+                handler.post(new Runnable() {
+                    private int seconds = 2;
+                    private boolean stopTimer = false;
+                    @Override
+                    public void run() {
+                        seconds--;
+                        if (seconds < 0) {
+                            myFab.setImageResource(R.drawable.check);
+                            stopTimer = true;
+                        }
+                        if(stopTimer == false) {
+                            myFab.setImageResource(R.drawable.heart);
+                            handler.postDelayed(this, 1000);
+                        }
+                    }
+
+                });
+            }
+
             @Override
             public void onClick(View view) {
                 if(!buttonClicked) {
-                    new CountDownTimer(2000, 50) {
-                        @Override
-                        public void onTick(long arg0) {
-                            myFab.setImageResource(R.drawable.heart);
-                        }
-                        @Override
-                        public void onFinish() {
-                            myFab.setImageResource(R.drawable.check);
-                        }
-                    }.start();
+                    timer();
                     myFab.startAnimation(FabClick);
                 }
                 else
