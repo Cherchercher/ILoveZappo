@@ -9,10 +9,10 @@ Zappos Intern Application
 1) Databinding for the product page <br />
 2) Using retrofit to handle REST requests<br />
 3) Animation with SplashScreen and Floating Action Button<br />
-4) Following Material Design guidelines<br />
+4) Following Material Design guidelines
    * floating action button(margins, depth)
-   * primary color, accent color <br />
-5) Well handled configuration changes<br />
+   * primary color, accent color
+5) Well handled configuration changes
    * onCreate(), onCLick()
    * RxAndroid onInputChange 
 
