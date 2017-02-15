@@ -2,8 +2,8 @@
 Zappos Intern Application
 
 ##Part I:Intro:
-   ZappoLove is to build an app that takes input from the user as a search query and returns a list of items with the Zappos Rest API.
-    Then user can click on a product of their choie and add it to cart with the option to reverse the action. 
+   ZappoLove is an Android Application that takes input from the user as a search query and returns a list of items with the Zappos Rest API.
+   Users can then click on a product of their choie and add it to cart( with the option to reverse the action). 
 
 ##Part II: utilization of Common Design Patterns: 
 1) Databinding for the product page <br />
