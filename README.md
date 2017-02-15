@@ -11,7 +11,8 @@ Zappos Intern Application
 5) Well handled configuration changes<br/>
    * onCreate(), onCLick()
    * RxAndroid onInputChange
-3) Animation with SplashScreen and Floating Action Button<br />
+
+<br/>3) Animation with SplashScreen and Floating Action Button<br />
 4) Following Material Design guidelines
    * floating action button(margins, depth)
    * primary color, accent color
